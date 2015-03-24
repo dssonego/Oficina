@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: "Open Sans", sans-serif !important; }
+
+/*PLACE HOLDER*/
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 15px; }
+
+:-moz-placeholder {
+  color: #ccc;
+  font-size: 15px; }
+
+::-moz-placeholder {
+  color: #ccc;
+  font-size: 15px; }
+
+:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 15px; }
+
+/*PLACE HOLDER*/
+.topo {
+  width: 100%;
+  height: 70px;
+  background: url("../image/bg_topo.png"); }
+  .topo .container {
+    text-align: center; }
+    .topo .container img {
+      margin-top: 5px; }
+
+/*MENU*/
+.navbar {
+  border-bottom: 1px solid #EEEEEE !important; }
+  .navbar a {
+    color: #666666; }
+    .navbar a span.estoque {
+      background: url("../image/icones/estoque.png");
+      width: 16px;
+      height: 14px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 5px; }
+    .navbar a span.agenda {
+      background: url("../image/icones/agenda.png");
+      width: 16px;
+      height: 14px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 5px; }
+    .navbar a span.clientes {
+      background: url("../image/icones/clientes.png");
+      width: 14px;
+      height: 14px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 5px; }
+    .navbar a span.financeiro {
+      background: url("../image/icones/financeiro.png");
+      width: 14px;
+      height: 14px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 5px; }
+  .navbar .navbar-right li a {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .navbar .navbar-right li.bem-vindo {
+    margin-top: 15px;
+    margin-right: 10px; }
+    .navbar .navbar-right li.bem-vindo span {
+      color: #107FC4;
+      font-weight: bold; }
+
+/*MENU*/
+/*ABAIXO MENU*/
+section.dados {
+  width: 100%;
+  padding: 31px 0;
+  background: #fff;
+  box-shadow: 5px 7px 16px #EEEEEE;
+  -webkit-box-shadow: 5px 7px 16px #EEEEEE;
+  -moz-box-shadow: 5px 7px 16px #EEEEEE; }
+  section.dados h1 {
+    margin: 0;
+    color: #666666; }
+  section.dados .searcandnovo {
+    float: right; }
+    section.dados .searcandnovo .novo {
+      position: relative;
+      text-align: center; }
+      section.dados .searcandnovo .novo a {
+        width: 100%;
+        background: #33B785;
+        padding: 8px 0;
+        display: block;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        color: #fff; }
+    section.dados .searcandnovo .search {
+      position: relative;
+      padding-right: 0; }
+      section.dados .searcandnovo .search .input-group {
+        width: 100%; }
+        section.dados .searcandnovo .search .input-group .form-control {
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+          background: url("../image/icones/busca.png");
+          background-repeat: no-repeat;
+          background-position: right 7px bottom 7px;
+          padding-right: 40px; }
+
+/*ABAIXO MENU*/
+/*TABELA CLIENTES*/
+.tabela {
+  margin-top: 40px; }
+  .tabela table thead tr.topo-tabela {
+    background: #1080C4; }
+    .tabela table thead tr.topo-tabela th {
+      padding: 10px;
+      color: #fff; }
+  .tabela table .searchable tr td {
+    padding: 10px; }
+  .tabela table .searchable #menuLogin {
+    list-style: none;
+    text-align: center; }
+    .tabela table .searchable #menuLogin img {
+      margin: 0 3px;
+      height: 17px; }
+    .tabela table .searchable #menuLogin input {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-top: 5px;
+      width: 100%; }
+    .tabela table .searchable #menuLogin input[type="submit"] {
+      width: 100%;
+      background: #33B785;
+      border: 0;
+      color: #fff; }
+
+/*TABELA CLIENTES*/
+/*Visualiza Cliente*/
+.modal-dialog, #modal-visualiza-cliente {
+  width: 700px !important;
+  height: 408px; }
+
+.visualiza-cliente {
+  width: 316px;
+  float: left; }
+  .visualiza-cliente .form-group {
+    margin: 0 0 4px 0; }
+    .visualiza-cliente .form-group input {
+      padding: 18px 10px; }
+
+/*TABELA VEICULOS*/
+.tabela-veiculos {
+  margin-top: 40px; }
+  .tabela-veiculos table thead tr.topo-tabela {
+    background: #33B785; }
+    .tabela-veiculos table thead tr.topo-tabela th {
+      padding: 5px;
+      color: #fff;
+      font-size: 14px;
+      text-align: center; }
+  .tabela-veiculos table .searchable tr td {
+    padding: 5px;
+    font-size: 13px;
+    text-align: center; }
+  .tabela-veiculos table .searchable tr.excluindo {
+    background: #FF2626;
+    opacity: 0.8; }
+
+img.nenhum-veiculo {
+  position: absolute;
+  top: 80px;
+  margin-left: 87px; }
+
+/*TABELA VEICULOS*/
+/*Visualiza Cliente*/

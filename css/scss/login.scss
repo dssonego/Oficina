@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$font-padrao:'Open Sans', sans-serif;
+
+/*PLACE HOLDER*/
+::-webkit-input-placeholder {
+	   color: #fff;
+	   font-size:15px;
+	}
+
+	:-moz-placeholder {
+	   color: #fff;
+	   font-size:15px;
+	}
+
+	::-moz-placeholder {
+	   color: #fff; 
+	   font-size:15px; 
+	}
+
+	:-ms-input-placeholder {  
+	   color: #fff;  
+	   font-size:15px;
+	}
+/*PLACE HOLDER*/
+
+
+body.login { 
+  background: url(../image/background_home.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:$font-padrao;
+}
+
+.login{
+	width:300px;
+	height:240px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-120px;
+	margin-left:-150px;
+
+	input{
+		width: 213px;
+		padding: 10px 5px 10px 40px;
+		margin-left:17px;
+		margin-bottom:20px;
+		background:transparent;
+		border:0;
+		border-bottom:1px solid #fff;
+		color:#fff;
+		font-family:$font-padrao;
+	}
+
+	input[type='text']{
+		background-image: url('../image/icones_login/user.png');
+		background-repeat: no-repeat;
+		background-position: 8px center;
+	}
+
+	input[type='password']{
+		background-image: url('../image/icones_login/pass.png');
+		background-repeat: no-repeat;
+		background-position: 8px center;
+	}
+
+	input[type='submit']{
+		background:#259AE9;
+		width:262px;
+		padding: 10px 5px;
+		border:1px solid #333;
+		font-size:16px;
+		cursor:pointer;
+		font-family:$font-padrao;
+		margin-bottom:0;
+		margin-top:10px;
+	}
+
+	.container-erro{
+		width: 251px;
+		color: #fff;
+		background: #B20000;
+		padding: 10px 5px;
+		font-size: 12px;
+		margin-left: 18px;
+		text-align: center;
+		margin-top: -18px;
+	}
+}

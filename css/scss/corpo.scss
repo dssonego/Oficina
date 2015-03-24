@@ -1,0 +1,275 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$font-padrao:'Open Sans', sans-serif;
+
+body{
+	font-family:$font-padrao !important;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*PLACE HOLDER*/
+::-webkit-input-placeholder {
+	   color: #ccc;
+	   font-size:15px;
+	}
+
+	:-moz-placeholder {
+	   color: #ccc;
+	   font-size:15px;
+	}
+
+	::-moz-placeholder {
+	   color: #ccc; 
+	   font-size:15px; 
+	}
+
+	:-ms-input-placeholder {  
+	   color: #ccc;  
+	   font-size:15px;
+	}
+/*PLACE HOLDER*/
+
+.topo{
+	width:100%;
+	height:70px;
+	background:url('../image/bg_topo.png');
+
+	.container{
+		text-align:center;
+
+		img{
+			margin-top:5px;
+		}
+	}
+}
+
+/*MENU*/
+.navbar{
+	border-bottom:1px solid #EEEEEE !important;
+
+	a{
+		color:#666666;
+		span.estoque{
+			background: url("../image/icones/estoque.png");
+			width: 16px;
+			height: 14px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+
+		span.agenda{
+			background: url("../image/icones/agenda.png");
+			width: 16px;
+			height: 14px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+
+		span.clientes{
+			background: url("../image/icones/clientes.png");
+			width: 14px;
+			height: 14px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+
+		span.financeiro{
+			background: url("../image/icones/financeiro.png");
+			width: 14px;
+			height: 14px;
+			float: left;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+	}
+
+	.navbar-right{
+		li a{
+			padding-left:5px;
+			padding-right:5px;
+		}
+
+		li.bem-vindo{
+			margin-top:15px;
+			margin-right:10px;
+
+			span{
+				color:#107FC4;
+				font-weight: bold;
+			}
+		}
+	}
+}
+/*MENU*/
+
+/*ABAIXO MENU*/
+section.dados{
+	width:100%;
+	padding:31px 0;
+	background:#fff;
+	box-shadow: 5px 7px 16px #EEEEEE;
+	-webkit-box-shadow: 5px 7px 16px #EEEEEE;
+	-moz-box-shadow: 5px 7px 16px #EEEEEE;
+
+	h1{
+		margin:0;
+		color:#666666;
+	}
+
+	.searcandnovo{
+		float:right;
+
+		.novo{
+			position:relative;
+			text-align:center;
+
+			a{
+				width: 100%;
+				background: #33B785;
+				padding: 8px 0;
+				display: block;
+				@include border-radius(5px);
+				color:#fff;
+			}
+		}
+
+		.search{
+			position:relative;
+			padding-right:0;
+
+			.input-group{
+				width:100%;
+
+				.form-control{
+					@include border-radius(5px);
+					background:url('../image/icones/busca.png');
+					background-repeat: no-repeat;
+					background-position: right 7px bottom 7px;
+					padding-right:40px;
+				}
+			}
+		}
+	}	
+}
+/*ABAIXO MENU*/
+
+/*TABELA CLIENTES*/
+.tabela{
+	margin-top:40px;
+
+	table{
+		thead{
+			tr.topo-tabela{
+				background:#1080C4;
+
+				th{
+					padding:10px;
+					color:#fff;
+				}
+			}
+		}
+
+		.searchable{
+			tr td{
+				padding:10px;
+			}
+
+			#menuLogin{
+				list-style: none;
+				text-align:center;
+
+				img{
+					margin:0 3px;
+					height: 17px;
+				}
+
+				input{
+					@include border-radius(5px);
+					border: 1px solid #ccc;
+					padding:5px;
+					margin-top:5px;
+					width:100%;
+				}
+
+				input[type="submit"]{
+					width:100%;
+					background:#33B785;
+					border:0;
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+/*TABELA CLIENTES*/
+
+/*Visualiza Cliente*/
+
+.modal-dialog , #modal-visualiza-cliente{
+	width:700px !important;
+	height:408px;
+}	
+
+.visualiza-cliente{
+	width: 316px;
+  	float: left;
+
+		.form-group{
+			margin:0 0 4px 0;
+
+			input{
+				padding:18px 10px;
+			}
+		}
+}
+
+/*TABELA VEICULOS*/
+.tabela-veiculos{
+	margin-top:40px;
+
+	table{
+		thead{
+			tr.topo-tabela{
+				background:#33B785;
+
+				th{
+					padding:5px;
+					color:#fff;
+					font-size:14px;
+					text-align:center;
+				}
+			}
+		}
+
+		.searchable{
+			tr td{
+				padding:5px;
+				font-size:13px;
+				text-align:center;
+			}
+
+			tr.excluindo{
+				background:#FF2626;
+				opacity:0.8;
+			}
+		}
+	}
+}
+
+img.nenhum-veiculo{
+	position: absolute;
+  	top: 80px;
+  	margin-left: 87px;
+}
+/*TABELA VEICULOS*/
+
+/*Visualiza Cliente*/
